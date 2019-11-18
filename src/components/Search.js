@@ -7,16 +7,13 @@ class Search extends Component {
         super(props);
       }
 
-      handleChange= this.props.handleChange
-
-
 
     render() {
         return (
             <Input
                 className="search-box"
                 placeholder="Enter Country Name"
-                onChange={(e) => this.handleChange(e)}
+                onChange={this.props.handleChange}
             />
         );
     }
